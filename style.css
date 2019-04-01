@@ -1,5 +1,5 @@
 body{
-  background-color: #012634;
+  background-color: #111;
   font-family: fantasy;
   margin-top: 0;
   margin-bottom: 0;
@@ -18,6 +18,22 @@ h1 {
   font-size: 50px;
 }
 
+h4 {
+  text-align: center;
+  color: grey;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+}
+
+
+p {
+  text-align: center;
+  color: grey;
+  font-size: 20px;
+  font-style: italic;
+}
+
 a {
   text-align: center;
   color: grey;
@@ -29,23 +45,53 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 200px;
+  overflow: hidden;
   background-color: #flflfl;
 }
 
-li a{
-display: block;
-color: #000;
-padding: 8px 16px;
-text-decoration: none;
+li {
+float: left;
 }
 
+a {
+  display: block;
+  padding: 8px;
+  background-color: #flflfl
+}
 /* Change the link color on hover */
-li a:hover {
-  background-color: #555;
+li a:hover, .dropdown:hover .dropbtn {
+  display: block;
   color: white;
+  text-align: center
+  padding: 14px 16px;
+  background-color: #555;
 }
 
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #555;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #555}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 .bilde{
   width: 200px;
   border-radius: 50%;
