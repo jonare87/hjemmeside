@@ -1,8 +1,15 @@
 body{
   background-color: #012634;
   font-family: fantasy;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin: 0;
 }
 
+#header{
+position: relative;
+background-image: url(img/kontor2.jpg);
+}
 h1 {
   text-align: center;
   color: grey;
@@ -11,9 +18,32 @@ h1 {
   font-size: 50px;
 }
 
-p {
-  color: grey;
+a {
   text-align: center;
+  color: grey;
+  font-weight: bold;
+  font-style: italic;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #flflfl;
+}
+
+li a{
+display: block;
+color: #000;
+padding: 8px 16px;
+text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #555;
+  color: white;
 }
 
 .bilde{
@@ -26,21 +56,4 @@ p {
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
-}
-
-.overskrift{
-  font-weight: bold;
-  font-style: italic;
-  font-size: 20px;
-}
-
-.forfatter{
-  font-weight: bold;
-  font-style: italic;
-  font-size: 20px;
-}
-.sitat {
-  font-weight: bold;
-  font-style: italic;
-  font-size: 20px;
 }
